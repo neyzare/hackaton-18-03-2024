@@ -1,0 +1,7 @@
+#bande{
+    padding: 5px; 
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    transition: width 1s;
+}
