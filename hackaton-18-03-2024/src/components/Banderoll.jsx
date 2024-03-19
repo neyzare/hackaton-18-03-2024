@@ -18,9 +18,10 @@ function Banderoll() {
 
   return (
     <>
-      <div>
+      <div className='bandeBox'>
         <h1 id='bande'>F</h1>
         {/* <p>Une note de F correspond au top 17% des logements français les plus énergivores</p> */}
+        <p>📍 Votre habitation est au 76 rue du Petit Chasseur, 45 000 Orléans</p>
       </div>
       
     </>
