@@ -1,46 +1,36 @@
-import React, { useEffect } from 'react';
-import '../css/Banderoll.css'
+import React, { useEffect, useState } from 'react';
+import '../css/Banderoll.css';
 
 function Banderoll() {
+  const [isHovered, setIsHovered] = useState(false);
+
   useEffect(() => {
     const handleMouseMove = () => {
       const bnd = document.querySelector("#bande");
       bnd.style.width = "300px";
     };
 
+    const handleMouseLeave = () => {
+      const bnd = document.querySelector("#bande");
+      bnd.style.width = "fit-content";
+    };
+
     const bnd = document.querySelector("#bande");
-    bnd.addEventListener('mousemove', handleMouseMove);
+    bnd.addEventListener('mouseenter', handleMouseMove);
+    bnd.addEventListener('mouseleave', handleMouseLeave);
 
     return () => {
-      bnd.removeEventListener('mousemove', handleMouseMove);
+      bnd.removeEventListener('mouseenter', handleMouseMove);
+      bnd.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, []);
 
   return (
-    <>
-      <div className='bandeBox'>
-        <h1 id='bande'>F</h1>
-        {/* <p>Une note de F correspond au top 17% des logements français les plus énergivores</p> */}
-        <p>📍 Votre habitation est au 76 rue du Petit Chasseur, 45 000 Orléans</p>
-      </div>
-      
-    </>
-    
-  )
-  
+    <div className='bandeBox'>
+      <h1 id='bande'>F</h1>
+      <p>📍 Votre habitation est au 76 rue du Petit Chasseur, 45 000 Orléans</p>
+    </div>
+  );
 }
-// const bnd = document.querySelector("#bande")
 
-// bnd.addEventListener('mousemove', 
-//   ()=> {this.style.fontsize = "200px"}
-// )
-
-// bnd.onmousemove = function(){
-//   this.style.fontsize = "200px"
-// }
-
-// bnd.onmouseleave = function(){
-//   this.style.fontsize = "100px"
-// }
-
-export default Banderoll
+export default Banderoll;
