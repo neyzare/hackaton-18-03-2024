@@ -1,12 +1,10 @@
 .container {
-    height: 2000px;
+    height: 600px;
   }
   
   .card {
-    width: 300px;
+    width: fit-content;
     height: 200px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
     border-radius: 5px;
     margin: 20px auto;
     opacity: 0;
@@ -17,4 +15,15 @@
   .card.visible {
     opacity: 1;
     transform: translateY(0);
+    display: flex;
+    margin-top: 2em;
+    justify-content: space-around;
   }
+
+.cardanime1{
+  margin-inline: 1em;
+}
+
+.cardanime2{
+  margin-inline: 1em;
+}

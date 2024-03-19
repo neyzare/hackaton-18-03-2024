@@ -4,3 +4,8 @@
   align-items: center;
   padding-inline: 10%;
 }
+
+.center{
+  text-align: center;
+  padding-top: 1em;
+}

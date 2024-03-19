@@ -10,9 +10,6 @@ function EnergyInfo() {
     <>
       <div className='energyBox' id='energyBox'>
         <h3>Votre étiquette energie</h3>
-        <p id='valeur1'>valeur1</p>
-        
-        <p id='valeur2'>valeur2</p>
         
         <svg width="270" height="266" viewBox="0 0 270 266" fill="none" xmlns="http://www.w3.org/2000/svg" className='energy1'>
           <rect x="2.5" y="0.5" width="143" height="37" rx="5.5" fill="#F6F6F6"/>

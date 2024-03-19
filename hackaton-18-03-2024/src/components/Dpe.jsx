@@ -30,9 +30,9 @@ function Dpe() {
   }
 
   return (
-    <div>
+    <div className='center'>
       {dpeData && (
-        <div>
+        <div className='center'>
           <h2>Message: {dpeData.Message}</h2>
           <h3>Détails du DPE :</h3>
           <ul>
