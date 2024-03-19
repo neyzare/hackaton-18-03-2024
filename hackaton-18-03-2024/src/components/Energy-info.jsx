@@ -22,13 +22,29 @@ function EnergyInfo() {
         console.log(error);
       }
     };
-
     fetchData();
+
+    const handleScroll = () => {
+      const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      const div = document.getElementById('energyBox');
+
+      // Modifiez '100' pour ajuster la vitesse de déplacement vers la gauche
+      if (div) {
+        div.style.left = `${50 - scrollPosition / 100}px`;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Nettoyer l'écouteur lors du démontage du composant
+    return () => window.removeEventListener('scroll', handleScroll);
+
   }, []);
+
 
   return (
     <>
-      <div className='energyBox'>
+      <div className='energyBox' id='energyBox'>
         <h3>Votre étiquette energie</h3>
         <svg width="270" height="266" viewBox="0 0 270 266" fill="none" xmlns="http://www.w3.org/2000/svg" className='energy1'>
           <rect x="2.5" y="0.5" width="143" height="37" rx="5.5" fill="#F6F6F6"/>
