@@ -3,6 +3,14 @@
 }
 
 .houseLogo:hover{
-  transform: scale(1.3);
+  transform: scale(1.4);
 }
 
+.hover-visible {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.houseLogo:hover .hover-visible {
+  opacity: 1;
+}
