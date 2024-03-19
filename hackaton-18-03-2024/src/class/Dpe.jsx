@@ -18,7 +18,7 @@ class Dpe extends React.Component {
     .then(response => response.json())
     .then(data => {
       console.log(data); 
-      this.setState({ adresse: 'hello' });
+      this.setState({ adresse: data });
     })
     .catch(error => {
       console.error('Erreur lors de la récupération de l\'adresse:', error);
@@ -28,7 +28,7 @@ class Dpe extends React.Component {
   render() {
     return (
       <div>
-        <h1>Bonjour, je m'appelle {this.state.nom} et j'ai {this.state.age} ans.</h1>
+        {this.state}
       </div>
     );
   }
