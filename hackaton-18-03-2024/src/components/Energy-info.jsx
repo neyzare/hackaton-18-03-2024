@@ -4,27 +4,7 @@ import axios from 'axios';
 
 function EnergyInfo() {
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const options = {
-        method: 'GET',
-        url: '/trouve_adresse/2362E0868302S',
-        headers: {
-          'accept': 'application/json',
-          'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjb2RhX3NjaG9vbF9zdHVkZW50IiwiZXhwIjoxNzEwNzkzNTE3fQ.OS4ON7Fft5TXxF7elpA15e9VElad2cm2-wJdxxXdlZ4'
-        }
-      };
 
-      try {
-        const response = await axios.request(options);
-        console.log(response.data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    fetchData();
-  }, []);
 
   return (
     <>
