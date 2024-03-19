@@ -1,0 +1,7 @@
+.houseLogo{
+  transition: transform 0.8s ease;
+}
+
+.houseLogo:hover{
+  transform: scale(1.3);
+}

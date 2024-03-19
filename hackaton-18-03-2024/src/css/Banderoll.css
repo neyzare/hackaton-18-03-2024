@@ -1,7 +1,30 @@
+.bandeBox{
+    height: fit-content;
+    padding-inline: 10%;
+    padding-top: 2.5%;
+    padding-bottom: 3.5%;
+}
+
+.bandeBox p{
+    padding-left: 2em;
+    font-weight: 200;
+}
+
 #bande{
-    padding: 5px; 
-    height: 50px;
-    width: 50px;
+    height: fit-content;
+    width: fit-content;
+    padding-block: 6px;
+    padding-left: 0.6em;
+    padding-right: 1.5em;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    clip-path: polygon(0% 0%, 55% 0%, 100% 50%, 55% 100%, 0% 100%);
     background-color: orange;
     transition: width 1s;
+    margin-bottom: 0.6em;
+
+}
+
+#bande:hover{
+    clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
 }

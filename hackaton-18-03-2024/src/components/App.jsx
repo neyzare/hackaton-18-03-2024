@@ -1,10 +1,17 @@
 import '../css/App.css'
+import EnergyInfo from './Energy-info.jsx'
+import House from './House.jsx'
 
 function App() {
 
   return (
     <>
-      <h1>hello</h1>
+      
+      <div className='appGroup'>
+        <EnergyInfo/>
+        <House/>
+      </div>
+      
     </>
     
   )
