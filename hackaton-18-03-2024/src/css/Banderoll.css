@@ -8,6 +8,7 @@
 .bandeBox p{
     padding-left: 2em;
     font-weight: 200;
+    
 }
 
 #bande{
@@ -20,11 +21,12 @@
     border-bottom-left-radius: 15px;
     clip-path: polygon(0% 0%, 55% 0%, 100% 50%, 55% 100%, 0% 100%);
     background-color: orange;
-    transition: width 1s;
+    transition: 1s;
     margin-bottom: 0.6em;
 
 }
 
 #bande:hover{
     clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+    transition: 1s;
 }
