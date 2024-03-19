@@ -23,3 +23,18 @@
   margin-top: 0.6em;
 }
 
+#valeur1{
+  position: absolute;
+  top: 290px;
+  left: 390px;
+
+}
+
+#valeur2{
+  position: absolute;
+  top: 290px;
+  left: 740px;
+
+}
+
+
